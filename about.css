@@ -20,7 +20,83 @@ main .about .img img{
 }
 main .about .desc p{
     font-size: 20px;
-    font-family: 'Clash Display', sans-serif;
     color: white;
     letter-spacing: 1.5px;
+}
+.et{
+    margin-top: 50px;
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+main .about .desc .et .tab-titles p{
+    font-size: 25px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(rgb(44, 50, 239), rgb(225, 27, 185), rgb(208, 9, 181));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.tab-titles {
+    
+    display: flex;
+    margin: 10px 0 20px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after {
+    width: 100%;
+}
+.about .desc .tab-contents ul {
+    display: flex;
+    justify-content: space-between;
+}
+.about .desc .tab-contents ul li {
+    list-style: none;
+    margin: 7px 17px 0px 0px;
+    font-size: 15px;
+    line-height: 21px;
+    color: white;
+    font-weight: 400;
+    text-align: justify;
+}
+.about .desc .tab-contents ul li .un{
+    color: rgb(158, 158, 158);
+}
+
+.about .desc .tab-contents ul li span {
+    color: rgba(182, 214, 0, 0.617);
+    font-size: 20px;
+}
+.about .desc .tab-contents ul li  a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+
+   
+}
+
+.about .desc .tab-contents {
+    display: none;
+    
+}
+
+.about .desc .tab-contents.active-tab {
+    display: block;
 }

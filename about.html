@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about.css">
-    <title>Document</title>
-</head>
+    <link rel="shortcut icon" href="./img/670fabb1ba99e.png" type="image/x-icon">
+    <title>Prtfolio</title></head>
 <body>
+    <div id="mouse"></div>
+
     <video autoplay muted loop playsinline preload="auto" class="v1">
         <source src="./img/BG.mp4" type="video/mp4">
     </video>
     <nav>
                 <ul>
                     <a href="./index.html"><li>Acceuil</li></a>
-                    <a href="./about.html"><li>About</li></a>
+                    <a href="./about.html"><li>A Propos</li></a>
                     <a href="./projet.html"><li>Projets</li></a>
-                    <a href="./competence.html"><li>Competence</li></a>
+                    <a href="./competence.html"><li>Competences</li></a>
                     <a href="contact.html"><li>Contacte</li></a>
                 </ul>
     </nav>
@@ -27,13 +29,43 @@
                 <img src="./img/670fabb1ba99e.png" alt="">
             </div>
             <div class="desc">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eveniet accusantium voluptates
-                     tenetur asperiores? Odit dolore nesciunt, 
-                    voluptate nulla suscipit velit itaque tenetur. Optio officiis repudiandae fugit harum consequatur rem? 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi porro fuga eum possimus fugiat id dolorum, voluptate nemo. 
-                    Enim omnis ipsum similique maiores eum molestiae deleniti quisquam repellat doloremque doloribus?</p>
+                <p>Passionné par l'informatique et doté d'un fort esprit d'équipe, j'ai effectué 
+                    2 ans d'alternance chez Agridata Consulting, où j'ai renforcé mes compétences en 
+                    développement web et logiciel, notamment avec WinDev. Diplômé d'un BTS en Développement Informatique 
+                    en 2024, je suis actuellement en première année de bachelor en Chef de Projet Digital. Mon parcours
+                     m'incite constamment à explorer de nouvelles connaissances et à perfectionner
+                    mes compétences, tout en restant curieux des évolutions technologiques.</p>
+                    <div class="et">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                            <p class="tab-links" onclick="openTab('certificat')">Certificat</p>
+                        </div>
+                        
+                        <div class="tab-contents active-tab" id="experience">
+                            <ul>
+                                <li><span>03/2023 - 31/2024</span><br>J'ai réalisé une alternance de 2 ans chez Agridata Consulting, alternant 3 semaines à l'école et 3 semaines en entreprise. Cette alternance m'a permis de combiner théorie et pratique, en travaillant sur des projets de développement informatique pour le secteur agricole, notamment avec WinDev. Cela m'a également donné l'occasion de développer des compétences techniques et de travailler en équipe avec des professionnels du domaine</li>
+                                <li><span>2021-2022</span><br>J'ai travaillé pendant 5 mois comme serveur dans un restaurant appelé Vita Mix. Cette expérience m'a permis de développer des compétences en gestion du stress et de travailler efficacement sous pression, tout en améliorant mes capacités à interagir avec les clients et à gérer des situations dynamiques</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>1ʳᵉ Année Bachelor Chef de Projet Digital <br> <br><span class="un">Ecole des métiers de l’internet</span></li>
+                                <li><span>2022 - 2024</span><br>Technicien Specialise en Developpement Informatique <br> <br><span class="un">Ecole Française d'Enseignement Technique</span></li>
+                                <li><span>2021</span><br>Bac Science Physique</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certificat">
+                            <ul>
+                                <li><span>HTML/CSS</span><br><a href="./image/Coursera ZC2JANV67KVQ.pdf" target="_blank">See Certificat </a></li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
         </div>
     </main>
 </body>
+<script src="./script.js"></script>
+
 </html>
