@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="projet.css">
     <title>Document</title>
 </head>
@@ -18,11 +17,13 @@
                     <a href="./index.html"><li>Acceuil</li></a>
                     <a href="./about.html"><li>About</li></a>
                     <a href="./projet.html"><li>Projets</li></a>
-                    <a href="./competence.html"><li>Competence</li></a>
+                    <a href="./competence.html"><li>Competences</li></a>
                     <a href="contact.html"><li>Contacte</li></a>
                 </ul>
     </nav>
     <main>
+        <div id="mouse"></div>
+
         <div class="titre">
             <h1>Mes Projets</h1>
         </div>
@@ -51,5 +52,15 @@
             <button>ON S’EN PARLE ?</button>
         </div>
     </main>
+    <script>
+        document.body.addEventListener("mousemove", function(e) {
+				
+				var curX = e.clientX;
+				var curY = e.clientY;
+					
+				document.getElementById('mouse').style.left = curX - 120 + 'px';
+				document.getElementById('mouse').style.top = curY - 110 + 'px';
+});
+    </script>
 </body>
 </html>
