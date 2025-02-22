@@ -17,6 +17,7 @@ main .com{
     text-align: justify;
     border: 2px solid #ffffff82;
     box-shadow: 0 2px 12px #64a7f8;
+    z-index: 100;
 }
 main .com img{
     width: 80px;

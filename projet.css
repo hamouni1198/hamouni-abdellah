@@ -91,6 +91,8 @@ main .projet .p1{
 }
 main .projet .p1:hover{
     box-shadow: 12px 9px 12px 2px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+
 }
 main .projet .p2{
     background-image: url(./img/p2.png);
@@ -101,6 +103,8 @@ main .projet .p2{
 }
 main .projet .p2:hover{
     box-shadow:-12px 11px 12px 2px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+
 
 }
 main .projet .p3{
@@ -112,6 +116,8 @@ main .projet .p3{
 }
 main .projet .p3:hover{
     box-shadow: 9px -10px 12px 2px rgb(0 0 0 / 42%);
+    transform: scale(1.05);
+
 }
 main .fin{
     display: flex;
