@@ -58,3 +58,25 @@ nav  ul li:hover{
     transition: transform 0.05s ease-out;
     
   }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .v1{
+        height: 100vh;
+        top: 0px;
+    }
+    nav ul li {
+        font-size: 15px;
+    }
+    nav  ul{
+        gap: 40px;
+    }
+
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    nav ul li {
+        font-size: 10px;
+    }
+    nav  ul{
+        gap: 20px;
+    }
+
+  }
