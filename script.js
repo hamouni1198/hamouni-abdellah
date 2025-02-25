@@ -38,16 +38,16 @@ function openTab(tabName) {
 function updateVideoSource() {
     const video = document.getElementById("myVideo");
     const source = video.querySelector("source");
-
+    
     if (window.matchMedia("(max-width: 480px)").matches) {
         source.src = "./img/BG.mp4"; 
     } else {
         source.src = "./img/bgt.mp4"; 
     }
-
+    
+    console.log("Nouvelle source:", source.src);
     video.load(); // Recharge la vidéo avec la nouvelle source
 }
 
-// Appeler la fonction au chargement et à la redimension de la fenêtre
 window.addEventListener("load", updateVideoSource);
 window.addEventListener("resize", updateVideoSource);
