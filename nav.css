@@ -59,10 +59,7 @@ nav  ul li:hover{
     
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .v1{
-        height: 100vh;
-        top: 0px;
-    }
+    
     nav ul li {
         font-size: 15px;
     }
@@ -80,3 +77,12 @@ nav  ul li:hover{
     }
 
   }
+  @media screen and (max-width: 480px){
+    nav ul li {
+        font-size: 8px;
+    }
+    nav  ul{
+        gap: 5px;
+    }
+  }
+  
