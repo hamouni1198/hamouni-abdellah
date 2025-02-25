@@ -104,10 +104,10 @@ main .button button{
 }
 @media screen and (max-width: 480px){
     main .startr .abdel h1{
-        font-size: 50px;
+        font-size: 71px;
     }
     main .startr .sec2 .hamou h1{
-        font-size: 40px;
+        font-size: 55px;
     }
     main .startr .sec2 .hamou h5{
         font-size: 7px;
@@ -121,8 +121,8 @@ main .button button{
 
     }
     main .button button{
-        width: 100px;
+        width: 164px;
         height: 40px;
-        font-size: 10px;
+        font-size: 15px;
     }
 }
