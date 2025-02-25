@@ -35,3 +35,19 @@ function openTab(tabName) {
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabName).classList.add('active-tab');
 }
+function updateVideoSource() {
+    const video = document.getElementById("myVideo");
+    const source = video.querySelector("source");
+
+    if (window.matchMedia("(max-width: 480px)").matches) {
+        source.src = "./img/BG.mp4"; 
+    } else {
+        source.src = "./img/bgt.mp4"; 
+    }
+
+    video.load(); // Recharge la vidéo avec la nouvelle source
+}
+
+// Appeler la fonction au chargement et à la redimension de la fenêtre
+window.addEventListener("load", updateVideoSource);
+window.addEventListener("resize", updateVideoSource);
