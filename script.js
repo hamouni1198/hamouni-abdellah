@@ -39,7 +39,7 @@ function updateVideoSource() {
     const video = document.getElementById("myVideo");
     const source = video.querySelector("source");
     
-    if (window.matchMedia("(max-width: 480px)").matches) {
+    if (window.matchMedia("(min-width: 480px)").matches) {
         source.src = "./img/BG.mp4"; 
     } else {
         source.src = "./img/bgt.mp4"; 
@@ -48,4 +48,5 @@ function updateVideoSource() {
     console.log("Nouvelle source:", source.src);
     video.load(); // Recharge la vidéo avec la nouvelle source
 }
+
 
