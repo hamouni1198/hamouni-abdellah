@@ -113,6 +113,9 @@ main .about .desc .et .tab-titles p{
 
   }
   @media screen and (max-width: 480px){
+    .v1{
+        
+    }
     main .about{
         display:contents;
     }
