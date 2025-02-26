@@ -80,10 +80,10 @@ nav  ul li:hover{
 
     }
     nav ul li {
-        font-size: 8px;
+        font-size: 10px;
     }
     nav  ul{
-        gap: 5px;
+        gap: 12px;
     }
   }
   
