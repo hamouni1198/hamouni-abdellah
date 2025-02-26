@@ -129,7 +129,6 @@ main .about .desc .et .tab-titles p{
        display: flex;
        align-items: center;
        justify-content: center;
-       margin-top: 100px;
        margin-bottom: 40px;
     }
     main .about .img img{
