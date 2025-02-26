@@ -7,7 +7,7 @@
 }
 .v1 {
     position: absolute;
-    top: 50%;
+    top: 0%;
     transform: translate(0%, -50%);
     width: 101vw;
     height: 340vh;
