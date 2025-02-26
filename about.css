@@ -39,7 +39,6 @@ main .about .desc .et .tab-titles p{
     -webkit-text-fill-color:transparent;
 }
 .tab-titles {
-    
     display: flex;
     margin: 10px 0 20px;
 }
@@ -113,10 +112,42 @@ main .about .desc .et .tab-titles p{
 
   }
   @media screen and (max-width: 480px){
+    nav{
+        height: 7vh;
+
+    }
     .v1{
         
     }
     main .about{
-        display:contents;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 0;
     }
+    main .about .img{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 100px;
+       margin-bottom: 40px;
+    }
+    main .about .img img{
+        width:90% ;
+        
+    }
+    main .about .desc{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    main .about .desc p{
+        width: 70%;
+        text-align:justify ;
+    }
+    .tab-links{
+        margin-right: 50px;
+    }
+    
   }
