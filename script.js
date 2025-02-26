@@ -49,5 +49,3 @@ function updateVideoSource() {
     video.load(); // Recharge la vidéo avec la nouvelle source
 }
 
-window.addEventListener("load", updateVideoSource);
-window.addEventListener("resize", updateVideoSource);

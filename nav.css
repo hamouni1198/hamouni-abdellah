@@ -78,6 +78,10 @@ nav  ul li:hover{
 
   }
   @media screen and (max-width: 480px){
+    .v1{
+        height: 100vh;
+
+    }
     nav ul li {
         font-size: 8px;
     }
