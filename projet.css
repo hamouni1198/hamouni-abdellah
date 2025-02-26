@@ -8,8 +8,7 @@
 .v1 {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-51%, -50%);
+    transform: translate(0%, -50%);
     width: 101vw;
     height: 340vh;
     object-fit: cover;
@@ -156,3 +155,35 @@ main .button button{
     color: white;
     background-color:rgb(225, 27, 185) ;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    nav ul li {
+        font-size: 15px;
+    }
+    nav  ul{
+        gap: 40px;
+    }
+
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    nav ul li {
+        font-size: 10px;
+    }
+    nav  ul{
+        gap: 20px;
+    }
+
+  }
+  @media screen and (max-width: 480px){
+    .v1{
+        height: 100vh;
+
+    }
+    nav ul li {
+        font-size: 8px;
+    }
+    nav  ul{
+        gap: 5px;
+    }
+  }
+  
