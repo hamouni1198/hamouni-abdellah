@@ -113,7 +113,7 @@ main .about .desc .et .tab-titles p{
   }
   @media screen and (max-width: 480px){
     main{
-        margin-top: 288px;
+        margin-top: 388px;
     }
     nav{
         height: 7vh;
