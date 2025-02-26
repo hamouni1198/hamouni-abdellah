@@ -114,20 +114,18 @@ main .about .desc .et .tab-titles p{
   @media screen and (max-width: 480px){
     nav{
         height: 7vh;
-
     }
     .v1{
-        
+        width: 100%;
     }
+    
     main .about{
         flex-direction: column;
-       justify-content: center;
        align-items: center;
        gap: 0;
     }
     main .about .img{
        display: flex;
-       justify-content: center;
        align-items: center;
        margin-top: 100px;
        margin-bottom: 40px;
@@ -138,8 +136,8 @@ main .about .desc .et .tab-titles p{
     }
     main .about .desc{
         display: flex;
+        
         flex-direction: column;
-       justify-content: center;
        align-items: center;
     }
     main .about .desc p{
@@ -147,7 +145,8 @@ main .about .desc .et .tab-titles p{
         text-align:justify ;
     }
     .tab-links{
-        margin-right: 50px;
+        margin-right: 9px;
     }
+    
     
   }
