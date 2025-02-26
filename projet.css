@@ -7,9 +7,7 @@
 }
 .v1 {
     position: absolute;
-    top: 0%;
-    transform: translate(0%, -50%);
-    width: 101vw;
+    width: 100%;
     height: 340vh;
     object-fit: cover;
     z-index: -1;
@@ -70,6 +68,7 @@ main .titre h1{
 }
 main .projet{
     justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +154,7 @@ main .button button{
     color: white;
     background-color:rgb(225, 27, 185) ;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 885px) and (max-width: 1124px) {
     
     nav ul li {
         font-size: 15px;
@@ -163,6 +162,13 @@ main .button button{
     nav  ul{
         gap: 40px;
     }
+    main .projet{
+        
+    }
+    main .projet .box{
+        width: 500px;
+    }
+    
 
   }
   @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -176,13 +182,19 @@ main .button button{
   }
   @media screen and (max-width: 480px){
     .v1{
-        height: 100vh;
-
+        height: 288vh;
     }
     nav ul li {
         font-size: 10px;
     }
     nav  ul{
         gap: 12px;
+    }
+    main .projet .box{
+        width: 365px;
+        height: 200px;
+    }
+    main .fin h1{
+        font-size: 71px;
     }
   }
