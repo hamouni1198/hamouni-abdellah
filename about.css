@@ -100,3 +100,20 @@ main .about .desc .et .tab-titles p{
 .about .desc .tab-contents.active-tab {
     display: block;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main .about{
+        display:contents;
+    }
+
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    main .about{
+        display:contents;
+    }
+
+  }
+  @media screen and (max-width: 480px){
+    main .about{
+        display:contents;
+    }
+  }
