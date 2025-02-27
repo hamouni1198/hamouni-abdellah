@@ -8,7 +8,7 @@
 .v1 {
     position: absolute;
     width: 100%;
-    height: 340vh;
+    height: 100vw;
     object-fit: cover;
     z-index: -1;
 }
@@ -182,7 +182,7 @@ main .button button{
   }
   @media screen and (max-width: 480px){
     .v1{
-        height: 288vh;
+        height: 260vh;
     }
     nav ul li {
         font-size: 10px;
