@@ -46,7 +46,7 @@ function updateVideoSource() {
     }
     
     console.log("Nouvelle source:", source.src);
-    video.load(); // Recharge la vidéo avec la nouvelle source
+    video.load(); 
 }
 
-
+var click = document.getElementById

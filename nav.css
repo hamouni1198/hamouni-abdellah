@@ -38,6 +38,7 @@ nav  ul li{
     transition: color  7s ease-out;
    
 }
+
 nav  ul li:hover{
     color: rgb(194, 193, 193);
 }
