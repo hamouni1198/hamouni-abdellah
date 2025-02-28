@@ -23,9 +23,7 @@ main .com img{
     width: 80px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1124px) {
-    .v1{
-        height: 120%;
-    }
+    
     main .com{
         width: 80%;
     }
@@ -41,9 +39,7 @@ main .com img{
   }
   
   @media screen and (max-width: 480px){
-    .v1 {
-        height: 194%;
-    }
+    
     main{
         height: 194%;
         display: flex;
