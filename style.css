@@ -36,7 +36,8 @@ main .startr h1 span{
     color: white;
     background: none;
     font-size: 20px;
-}main .startr .sec2 .hamou span{
+}
+main .startr .sec2 .hamou span{
     font-size: 100px;
 }
 main .startr .sec2 .hamou {
@@ -132,10 +133,11 @@ main .button button{
     }
   }
   @media screen and (min-width: 480px) and (max-width: 768px) {
-    main .startr .abdel h1{
+    main .startr .abdel span{
         font-size: 80px;
     }
-    main .startr .sec2 .hamou h1{
+    
+    main .startr .sec2 .hamou span{
         font-size: 60px;
     }
     main .startr .sec2 .hamou{
@@ -151,10 +153,10 @@ main .button button{
     main .startr .abdel h1{
         font-size: 71px;
     }
-    main .startr .sec2 .hamou h1{
+    main .startr .abdel span{
         font-size: 55px;
     }
-    main .startr .sec2 .hamou h5{
+    main .startr .sec2 .hamou span{
         font-size: 7px;
         letter-spacing: 7px;
         font-weight: 100;
