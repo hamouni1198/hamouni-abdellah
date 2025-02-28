@@ -5,6 +5,12 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    background-image: url(./img/bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .v1 {
     position: absolute;
     width: 100%;
@@ -161,6 +167,10 @@ main .button button{
     nav  ul{
         gap: 40px;
     }
+    main .fin h1{
+        line-height: 1;
+
+    }
     main .projet{
         
     }
@@ -180,8 +190,17 @@ main .button button{
 
   }
   @media screen and (max-width: 480px){
+    main .button button {
+        margin-top: 20px;
+    }
+    main .projet {
+        gap: 43px ;
+    }
+    main .button button {
+        margin-top: 40px;
+    }
     .v1{
-        height: 260vh;
+        height: 210vh;
     }
     nav ul li {
         font-size: 10px;
@@ -195,5 +214,7 @@ main .button button{
     }
     main .fin h1{
         font-size: 71px;
+        line-height: 1;
+
     }
   }
