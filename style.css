@@ -137,8 +137,11 @@ main .button button{
         font-size: 80px;
     }
     
+    main .startr .abdel span{
+        font-size: 52px;
+    }
     main .startr .sec2 .hamou span{
-        font-size: 60px;
+        font-size: 50px;
     }
     main .startr .sec2 .hamou{
         top: -35px;
@@ -153,10 +156,13 @@ main .button button{
     main .startr .abdel h1{
         font-size: 71px;
     }
-    main .startr .abdel span{
-        font-size: 55px;
+   main .startr .abdel span{
+        font-size: 39px;
     }
     main .startr .sec2 .hamou span{
+    font-size: 35px;
+    }
+    main .startr .sec2 .hamou h5{
         font-size: 7px;
         letter-spacing: 7px;
         font-weight: 100;
