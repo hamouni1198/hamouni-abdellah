@@ -49,4 +49,4 @@ function updateVideoSource() {
     video.load(); 
 }
 
-var click = document.getElementById
+

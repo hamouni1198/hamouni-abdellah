@@ -22,3 +22,42 @@ main .com{
 main .com img{
     width: 80px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1124px) {
+    .v1{
+        height: 120%;
+    }
+    main .com{
+        width: 80%;
+    }
+    
+
+  }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main .com{
+        width: 70%;
+    }
+    
+
+  }
+  
+  @media screen and (max-width: 480px){
+    .v1 {
+        height: 194%;
+    }
+    main{
+        height: 194%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .com{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .com img{
+        width: 62px;
+    }
+  }
+  
