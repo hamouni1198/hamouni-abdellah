@@ -21,6 +21,8 @@ nav{
     height: 13vh;
     align-items: center;
     font-weight: 400;
+    position: relative;
+    z-index: 10;
 }
 nav  ul{
     display: flex;
