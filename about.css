@@ -16,7 +16,8 @@ main .about{
 }
 main .about .img img{
     border-radius: 20px;
-    box-shadow: 4px -1px 12px 2px rgb(255 255 255 / 25%);
+    box-shadow: 0 3px 26px #000000;
+
 }
 main .about .desc p{
     font-size: 20px;
@@ -130,7 +131,7 @@ main .about .desc .et .tab-titles p{
     }
     main .about .desc p{
         width: 94%;
-        text-align:justify ;
+        text-align:center ;
     }
     .tab-links{
         margin-right: 50px;
@@ -181,7 +182,6 @@ main .about .desc .et .tab-titles p{
     }
     main .about .desc p{
         width: 94%;
-        text-align:justify ;
     }
     .tab-links{
         margin-right: 50px;
@@ -195,6 +195,7 @@ main .about .desc .et .tab-titles p{
     }
     main .about .desc .et .tab-titles p{
         font-size: 29px;
+        text-align:center ;
     }
     .about .desc .tab-contents ul {
         gap: 29px;
@@ -232,7 +233,7 @@ main .about .desc .et .tab-titles p{
     }
     main .about .desc p{
         width: 94%;
-        text-align:justify ;
+        text-align:center ;
     }
     .tab-links{
         margin-right: 9px;

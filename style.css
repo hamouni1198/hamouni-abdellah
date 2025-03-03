@@ -166,29 +166,47 @@ main .button .b2{
 }
 @media screen and (max-width: 480px){
     main .startr .abdel h1{
-        font-size: 71px;
-
+        font-size: 90px;
     }
-   main .startr .abdel span{
-        font-size: 39px;
-    }
-    main .startr .sec2 .hamou span{
-    font-size: 35px;
+  
+    main .startr .sec2 .hamou h1{
+    font-size: 90px;
     }
     main .startr .sec2 .hamou h5{
-        font-size: 7px;
+        font-size: 17px;
         letter-spacing: 7px;
-        font-weight: 100;
+        font-weight: 400;
+        color: black;
     }
-    main .startr .sec2 .hamou{
-        top: -10px;
-        left: 50px;
-        line-height: 60px;
-
-    }
-    main .button button{
-        width: 164px;
-        height: 40px;
-        font-size: 15px;
-    }
+    main .button {
+            gap: 50px;
+        }
+        main .button .b1{
+            width: 150px;
+            height: 60px;
+            font-size: 15px;
+        }
+        main .button .b2{
+            width: 150px;
+            height: 60px;
+            font-size: 15px;
+        }
+        main .img{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            align-items: flex-start;
+            
+        }
+        main .img img{
+            width: 90%;
+                        position: relative;
+            z-index: 2; 
+            will-change: transform;
+            transform: translate3d(2.2344vw, -0.24468vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+        }
 }
