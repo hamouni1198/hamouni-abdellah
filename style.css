@@ -194,11 +194,11 @@ main .button .b2{
 
 @media screen and (max-width: 480px){
     main .startr .abdel h1{
-        font-size: 80px;
+        font-size: 84px;
     }
   
     main .startr .sec2 .hamou h1{
-    font-size: 80px;
+    font-size: 84px;
     }
     main .startr .sec2 .hamou h5{
         font-size: 17px;
@@ -231,7 +231,7 @@ main .button .b2{
             
         }
         main .img img{
-            width: 90%;
+            width: 75%;
            
         }
 }

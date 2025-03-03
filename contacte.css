@@ -15,7 +15,7 @@ main{
     max-width: 600px;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 3px 1px 16px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 12px #64a7f8;
     animation: fadeIn 1s ease-out;
 }
 .title{
