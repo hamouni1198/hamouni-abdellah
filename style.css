@@ -42,7 +42,7 @@ main .startr .sec2 .hamou {
 }
 main .startr .sec2 .hamou {
     text-align: end;
-    line-height: 107px;
+    line-height: 254px;
 }
 main .startr .sec2 .hamou h1{
     font-family: 'Clash Display ', sans-serif;
@@ -60,7 +60,7 @@ main .img{
     top: 0;
     width: 100vw;
     height: 100vh;
-    align-items: end;
+    align-items: flex-end;
     
 }
 main .img img{
@@ -75,17 +75,17 @@ main .img img{
 
 
 main .startr .sec2 .hamou h5{
-    font-size: 12px;
+    font-size: 40px;
     color: rgb(0, 0, 0);
     line-height: 0px;
-    letter-spacing: 13px;
+    letter-spacing: 2px;
     font-weight: 100;
     z-index: 3;
 }
 main .button {
     display: flex;
         justify-content: center;
-        margin-top: 122px;
+        margin-top: 59px;
         width: 100%;
         gap: 135px;
     }
