@@ -3,7 +3,6 @@
 /*main*/
 main{
     height: calc(100vh - 14vh);
-    margin-top: 20px;
 }
 main .about{
     display: flex;
@@ -214,7 +213,7 @@ main .about .desc .et .tab-titles p{
   }
   @media screen and (max-width: 480px){
     main{
-        margin-top: 388px;
+        margin-top: 399px;
     }
     nav{
         height: 7vh;
