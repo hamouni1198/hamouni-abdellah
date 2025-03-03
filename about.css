@@ -3,6 +3,7 @@
 /*main*/
 main{
     height: calc(100vh - 14vh);
+    margin-top: 20px;
 }
 main .about{
     display: flex;
