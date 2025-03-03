@@ -48,5 +48,48 @@ function updateVideoSource() {
     console.log("Nouvelle source:", source.src);
     video.load(); 
 }
+document.querySelectorAll('.ab').forEach(button => {
+    var t1 = document.querySelectorAll('.ab'); 
+    var t2 = document.querySelectorAll('.ha'); 
+
+    button.addEventListener('mouseover', () => {
+        t1.forEach(el => {
+            el.style.color = '#000';
+            el.style.zIndex = "3"; 
+            el.style.transition = '0.7s';
+        });
+
+        t2.forEach(el => {
+            el.style.webkitTextStroke = '2px rgb(0, 0, 0)';
+            el.style.color = 'transparent'; 
+            el.style.zIndex = "1"; 
+            el.style.transition = '0.7s';
+        });
+
+    });
+
+    button.addEventListener('mouseleave', () => {
+        t1.forEach(el => {
+            el.style.webkitTextStroke = '2px rgb(0, 0, 0)';
+            el.style.color = 'transparent'; 
+            el.style.zIndex = "1"; 
+            el.style.transition = '0.7s';
+        });
+        t2.forEach(el => {
+            el.style.color = '#000';
+            el.style.zIndex = "3"; 
+            el.style.transition = '0.7s';
+        });
+    });
+});
 
 
+
+
+document.addEventListener("mousemove", (event) => {
+    const image = document.querySelector(".image");
+    const moveX = (event.clientX / window.innerWidth - 0.1) * 40;
+    const moveY = (event.clientY / window.innerHeight - 0.1) * 40;
+    
+    image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});

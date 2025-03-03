@@ -20,23 +20,23 @@ main .about .img img{
 }
 main .about .desc p{
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     letter-spacing: 1.5px;
 }
 .et{
     margin-top: 20px;
+    margin-bottom: 40px;
+
 }
 .sub-title {
     font-size: 60px;
     font-weight: 700;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 main .about .desc .et .tab-titles p{
     font-size: 25px;
     font-weight: 600;
-    background: -webkit-linear-gradient(rgb(44, 50, 239), rgb(225, 27, 185), rgb(208, 9, 181));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    color: #000;
 }
 .tab-titles {
     display: flex;
@@ -54,7 +54,7 @@ main .about .desc .et .tab-titles p{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -66,26 +66,26 @@ main .about .desc .et .tab-titles p{
 .about .desc .tab-contents ul {
     display: flex;
     justify-content: space-between;
+    gap: 25px;
 }
 .about .desc .tab-contents ul li {
     list-style: none;
     margin: 7px 17px 0px 0px;
     font-size: 15px;
     line-height: 21px;
-    color: white;
+    color: rgb(4, 4, 4);
     font-weight: 400;
-    text-align: justify;
 }
 .about .desc .tab-contents ul li .un{
-    color: rgb(158, 158, 158);
+    color: rgb(102, 102, 102);
 }
 
 .about .desc .tab-contents ul li span {
-    color: rgba(182, 214, 0, 0.617);
+    color: rgba(231, 62, 1, 0.846);
     font-size: 20px;
 }
 .about .desc .tab-contents ul li  a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 18px;
 
    
