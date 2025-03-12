@@ -24,7 +24,11 @@ main .com{
     
 }
 main .com img{
-    width: 80px;
+    width: 10%;
+    transition: 0.5s;
+}
+main .com img:hover{
+    transform: scale(1.2);
 }
 @media screen and (min-width: 1024px) and (max-width: 1124px) {
     
