@@ -93,3 +93,32 @@ document.addEventListener("mousemove", (event) => {
     
     image.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
+
+function sendMail() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("issue").value;
+    var subject = document.getElementById("subject").value;
+
+    if (!name || !email || !message || !subject) {
+        alert("Veuillez remplir tous les champs.");
+        return;
+    }
+
+    var params = {
+        name: name,
+        email: email,
+        message: message,
+        subject: subject
+    };
+
+
+    emailjs.send("service_qw2peya", "template_gkif4f5", params)
+        .then(function (res) {
+            alert("Email envoyé avec succès ! Statut : " + res.status);
+        })
+        .catch(function (err) {
+            alert("Une erreur est survenue : " + err);
+            console.error("Erreur EmailJS :", err);
+        });
+}
