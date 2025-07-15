@@ -17,6 +17,8 @@ main{
     border-radius: 12px;
     box-shadow: 0 2px 12px #64a7f8;
     animation: fadeIn 1s ease-out;
+    overflow: hidden;  /* coupe le débordement */
+
 }
 .title{
     font-family: 'Clash Display ', sans-serif;
