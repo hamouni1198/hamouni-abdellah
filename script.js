@@ -122,3 +122,9 @@ function sendMail() {
             console.error("Erreur EmailJS :", err);
         });
 }
+document.querySelectorAll('.experience .e1, .experience .e2').forEach(item => {
+    item.addEventListener('click', () => {
+        const desc = item.querySelector('h3');
+        desc.classList.toggle('open');
+    });
+});

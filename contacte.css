@@ -3,7 +3,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 14vh);
+    min-height: calc(100vh - 14vh);
     margin-top: 20px;
     margin-bottom: 20px;
 }
