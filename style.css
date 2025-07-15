@@ -13,6 +13,11 @@ main{
     justify-content: center;    
     align-items: center;  
 }
+@media (min-height: 800px) {
+    main {
+        transform: scale(0.9);
+    }
+}
 main .startr{
     height: 100%;
     display: flex;
