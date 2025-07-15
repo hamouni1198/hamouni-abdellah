@@ -17,6 +17,10 @@ main{
     main {
         transform: scale(0.9);
     }
+    main .button{
+        margin-top: 14%;
+
+    }
 }
 main .startr{
     height: 100%;
