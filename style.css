@@ -7,10 +7,13 @@ body{
 }
 main{
     height: 100vh;
-    background: rgb(255, 255, 255);
-    transform: scale(0.7);
     background: white;
+    transform: scale(0.7);
     cursor: pointer;
+  
+    display: flex;            
+    justify-content: center;    
+    align-items: center;  
 }
 main .startr{
     height: 100%;
