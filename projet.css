@@ -150,6 +150,18 @@ main .projet .p3:hover{
     transform: scale(1.05);
 
 }
+main .projet .p4{
+    background-image: url(./img/p4.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:  0.7s ease-in;
+}
+main .projet .p4:hover{
+    box-shadow: 9px -10px 12px 2px rgb(0 0 0 / 42%);
+    transform: scale(1.05);
+
+}
 main .fin{
     display: flex;
     justify-content: center;
