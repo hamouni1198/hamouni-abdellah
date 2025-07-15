@@ -12,7 +12,6 @@ main .com{
     background: -webkit-linear-gradient(rgb(255 255 255 / 0%), #36363600, rgb(41 32 39 / 0%));
     border-radius: 40px;
     width: 60%;
-    height: 53%;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +20,7 @@ main .com{
     border: 2px solid #ffffff82;
     box-shadow: 0 2px 12px #64a7f8;
     z-index: 100;
-    overflow: hidden;  /* coupe le débordement */
+    overflow: hidden;  
 
 }
 main .com img{

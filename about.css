@@ -7,6 +7,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 main .about{
     display: flex;
@@ -91,7 +92,6 @@ main .about .desc .et .tab-titles p{
     line-height: 21px;
     color: rgb(4, 4, 4);
     font-weight: 400;
-    text-align: justify;
 }
 .about .desc .tab-contents ul li .un{
     color: rgb(102, 102, 102);
