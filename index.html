@@ -1,54 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/670fabb1ba99e.png" type="image/x-icon">
-    <title>Prtfolio</title></head>
-    <body>
-        <div id="mouse"></div>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/670fabb1ba99e.png" type="image/x-icon" />
+    <title>Portfolio</title> <!-- Correction du titre -->
+</head>
+<body>
+    <div id="mouse"></div>
 
-    
     <nav>
-                <ul>
-                    <a href="./index.html"><li>Acceuil</li></a>
-                    <a href="./about.html"><li>A Propos</li></a>
-                    <a href="./projet.html"><li>Projets</li></a>
-                    <a href="./competence.html"><li>Competences</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                </ul>
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>  <!-- Correction "Acceuil" -> "Accueil" et bonne sémantique -->
+            <li><a href="./about.html">À Propos</a></li> <!-- Accent ajouté -->
+            <li><a href="./projet.html">Projets</a></li>
+            <li><a href="./competence.html">Compétences</a></li> <!-- Accent ajouté -->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
+
     <main>
-        
         <div class="startr">
-
             <div class="abdel">
-                <h1 class="ab">Abdellah </h1>
+                <h1 class="ab">Abdellah</h1> <!-- espace inutile enlevé -->
             </div>
-         <div class="sec2">
-            <div class="hamou">
-                <h1 class="ha">Hamouni </h1>
-                <h5>Full Stack </h5>
+            <div class="sec2">
+                <div class="hamou">
+                    <h1 class="ha">Hamouni</h1> <!-- espace inutile enlevé -->
+                    <h5>Full Stack</h5> <!-- OK -->
+                </div>
+            </div>
+            <div class="button">
+                <a href="./about.html"><button class="b1">À Propos De Moi</button></a> <!-- Accent ajouté -->
+                <a href="./contact.html"><button class="b2">Contactez-moi</button></a> <!-- Trait d'union ajouté -->
             </div>
         </div>
-        <div class="button">
-            <a href="./about.html"><button class="b1">A Propos De Moi</button></a>
-            <a href="./contact.html"><button class="b2">Contactez moi</button></a>
 
-        </div>
-        </div>
-        
-        
         <div class="img">
-            <img src="./img/5.webp" alt="" class="image">
+            <img src="./img/5.webp" alt="Photo de profil" class="image" /> <!-- Ajout d'un alt plus significatif -->
         </div>
+        <section>
+            
+        </section>
     </main>
-    
 </body>
 <script src="./script.js"></script>
-
-
 </html>
