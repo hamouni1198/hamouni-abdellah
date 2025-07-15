@@ -13,15 +13,7 @@ main{
     justify-content: center;    
     align-items: center;  
 }
-@media (min-height: 800px) {
-    main {
-        transform: scale(0.9);
-    }
-    main .button{
-        margin-top: 14%;
 
-    }
-}
 main .startr{
     height: 100%;
     display: flex;
@@ -139,6 +131,15 @@ main .button .b2{
     z-index: 4;
     transition: all 0.5s;
 
+}
+@media (min-height: 800px) {
+    main {
+        transform: scale(0.9);
+    }
+    main .button{
+        margin-top: 14%;
+
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
     main .startr .abdel h1{
