@@ -6,11 +6,9 @@ body{
     overflow: hidden;
 }
 main{
-    height: 100vh;
     background: white;
     transform: scale(0.7);
     cursor: pointer;
-  
     display: flex;            
     justify-content: center;    
     align-items: center;  
