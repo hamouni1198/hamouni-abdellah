@@ -39,10 +39,18 @@ nav  ul li{
     transition: color  7s ease-out;
    
 }
-
-nav  ul li:hover{
-    color: rgb(0, 0, 0);
+nav ul li a{
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    transition: ease-in-out 0.5s;
 }
+nav ul li a:hover{
+    background-color: rgb(225, 225, 225);
+
+
+}
+
 #mouse {
     position: fixed;
     top: 90px;
