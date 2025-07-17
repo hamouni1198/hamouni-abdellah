@@ -109,6 +109,7 @@
 .experience .e1 h1,
 .experience .e2 h1  {
     font-size: 30px;
+    cursor: pointer;
 }
 .experience .e1 h2,
 .experience .e2 h2{
