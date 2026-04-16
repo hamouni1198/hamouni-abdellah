@@ -1,72 +1,69 @@
 @import url("nav.css");
 
-/*main*/
-main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
 }
-main .com{
-    background: -webkit-linear-gradient(rgb(255 255 255 / 0%), #36363600, rgb(41 32 39 / 0%));
-    border-radius: 40px;
-    width: 60%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 63px;
-    border: 2px solid #ffffff82;
-    box-shadow: 0 2px 12px #64a7f8;
-    z-index: 100;
-    overflow: hidden;  
 
+/* ── Glass container ── */
+.com {
+  width: 90%;
+  max-width: 900px;
+  padding: 48px 52px;
+  border-radius: 28px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
 }
-main .com img{
-    width: 10%;
-    transition: 0.5s;
-}
-main .com img:hover{
-    transform: scale(1.2);
-}
-@media screen and (min-width: 1024px) and (max-width: 1124px) {
-    
-    main .com{
-        width: 80%;
-        margin-bottom: 20px;
-    }
-    
 
+/* ── Icon ── */
+.com img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  filter: grayscale(30%);
+  opacity: 0.82;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform var(--transition), opacity var(--transition), filter var(--transition);
+}
+
+.com img:hover {
+  transform: translateY(-10px) scale(1.18) rotateX(8deg);
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .com {
+    padding: 32px 24px;
+    gap: 24px;
+    width: 95%;
   }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    main .com{
-        width: 70%;
-        margin-bottom: 20px;
+  .com img { width: 44px; height: 44px; }
+}
 
-    }
-    
-
+@media (max-width: 480px) {
+  main {
+    min-height: auto;
+    padding: 40px 16px 60px;
   }
-  
-  @media screen and (max-width: 480px){
-    
-    main{
-        height: 194%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    main .com{
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-
-    }
-    main .com img{
-        width: 62px;
-    }
+  .com {
+    gap: 20px;
+    padding: 24px 18px;
   }
-  
+  .com img { width: 38px; height: 38px; }
+}

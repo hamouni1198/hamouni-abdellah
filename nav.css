@@ -1,104 +1,121 @@
-*{
-    padding: 0;
-    margin: 0;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: 'Clash Display', sans-serif;
-
-}
-body{
-    height: 100%;
-    margin: 0;
-    background: rgb(255, 255, 255);
-}
-
-/*nav*/
-nav{
-    display: flex;
-    justify-content: center;
-    border-bottom: 0.5px solid rgb(105, 105, 105);
-    height: 13vh;
-    align-items: center;
-    font-weight: 400;
-    position: relative;
-    z-index: 10;
-}
-nav  ul{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 80px;
-}
-nav  ul li{
-    list-style: none;
-    font-size: 22px;
-    cursor: pointer;
-    color: #000000;
-    letter-spacing: 2px;
-    text-shadow: 0px 0px 0px #ffffffd6;
-    transition: color  7s ease-out;
-   
-}
-nav ul li a{
-    background-color: white;
-    border-radius: 5px;
-    padding: 8px;
-    transition: ease-in-out 0.5s;
-}
-nav ul li a:hover{
-    background-color: rgb(225, 225, 225);
-
-
+:root {
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --glass: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 24px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 48px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 24px 80px rgba(0, 0, 0, 0.16);
+  --radius: 16px;
+  --nav-h: 72px;
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--black);
+  text-decoration: none;
+  font-family: 'Clash Display', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  overflow-x: hidden;
+  padding-top: var(--nav-h);
+}
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Navigation ── */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--nav-h);
+  background: var(--glass);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+}
+
+nav ul {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 9px 22px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--black);
+  border-radius: 10px;
+  transition: background var(--transition), letter-spacing var(--transition);
+}
+
+nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  letter-spacing: 3.5px;
+}
+
+/* ── Custom cursor ── */
 #mouse {
-    position: fixed;
-    top: 90px;
-    left: 90px;
-    z-index: 100;
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle, rgba(231, 231, 231, 0.161) 0%, rgba(255, 255, 255, 0.024) 80%);
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(20px);
-    transition: transform 0.05s ease-out;
-    
-  }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
-    nav ul li {
-        font-size: 15px;
-    }
-    nav  ul{
-        gap: 40px;
-    }
-    nav{
-        height: 7vh;
-    }
+  position: fixed;
+  z-index: 9999;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,0,0,0.04) 0%, transparent 68%);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+  transition: opacity 0.3s;
+}
 
+/* ── Responsive nav ── */
+@media (max-width: 1024px) {
+  nav ul li a {
+    padding: 8px 14px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    nav ul li {
-        font-size: 10px;
-    }
-    nav  ul{
-        gap: 20px;
-    }
-    nav{
-        height: 7vh;
-    }
+  nav ul { gap: 2px; }
+}
 
+@media (max-width: 768px) {
+  nav ul li a {
+    padding: 6px 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
   }
-  @media screen and (max-width: 480px){
-    
-    nav ul li {
-        font-size: 10px;
-    }
-    nav  ul{
-        gap: 12px;
-    }
-    nav{
-        height: 7vh;
-    }
+  :root { --nav-h: 58px; }
+}
+
+@media (max-width: 480px) {
+  nav ul { gap: 0; }
+  nav ul li a {
+    padding: 5px 8px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
   }
-  
+}

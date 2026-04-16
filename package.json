@@ -1,0 +1,16 @@
+{
+  "name": "hamouni-abdellah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "three": "^0.183.2"
+  }
+}
