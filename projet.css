@@ -79,6 +79,9 @@ main {
 .p2 { background-image: url(./img/p2.png); }
 .p3 { background-image: url(./img/p3.png); }
 .p4 { background-image: url(./img/p4.png); }
+.p5 { background-image: url(./img/projet5.png);}
+.p6 { background-image: url(./img/projet6.png);}
+
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
